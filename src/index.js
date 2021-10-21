@@ -4,9 +4,9 @@ import {createStore} from 'redux'
 
 import './index.css';
 import App from './components/App';
-import movies from './reducers';
+import combineReducers from './reducers';
 
-const store = createStore(movies);
+const store = createStore(combineReducers);
 console.log("strore" , store);
 // console.log(" Before Staate" , store.getState());
 
